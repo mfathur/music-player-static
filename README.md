@@ -8,5 +8,5 @@ Design MockUp Reference: [link](https://www.behance.net/gallery/105831377/Music-
 
 ```
 npm install
-npm run node watch-sass
+npm run watch-sass
 ```
