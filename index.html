@@ -3,8 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Music Player</title>
+    <title>Music</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <nav>
+        <h1>Music</h1>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Favorites</a></li>
+          </ul>
+        </div>
+
+        <h3>YOUR LIBRARY</h3>
+        <div>
+          <ul>
+            <li><a href="#">Artists</a></li>
+            <li><a href="#">Songs</a></li>
+            <li><a href="#">Album</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="content">
+        <section class="fav-song-wrapper">
+          <h3>Most Played Songs</h3>
+
+          <div class="fav-song-list">
+            <div class="fav-song-item">
+              <img src="icons/music-img.jpeg" alt="song image" />
+              <h6>Song 1</h6>
+              <p>Artist 1</p>
+            </div>
+
+            <div class="fav-song-item">
+              <img src="icons/music-img.jpeg" alt="song image" />
+              <h6>Song 2</h6>
+              <p>Artist 2</p>
+            </div>
+
+            <div class="fav-song-item">
+              <img src="icons/music-img.jpeg" alt="song image" />
+              <h6>Song 3</h6>
+              <p>Artist 3</p>
+            </div>
+
+            <div class="fav-song-item">
+              <img src="icons/music-img.jpeg" alt="song image" />
+              <h6>Song 4</h6>
+              <p>Artist 4</p>
+            </div>
+
+            <div class="fav-song-item">
+              <img src="icons/music-img.jpeg" alt="song image" />
+              <h6>Song 5</h6>
+              <p>Artist 5</p>
+            </div>
+        </section>
+
+        <div class="song-playlist-wrapper">
+          <section class="all-songs">
+            <h3>All Songs</h3>
+
+            <div class="song-item">
+                <img src="icons/music-img.jpeg" alt="song image">
+                <div class="song-title-artist">
+                    <h6>Song 1</h6>
+                    <p>Artist 1</p>
+                </div>
+                <p>3:15</p>
+                <div class="btn">Add to playlist</div>
+            </div>
+
+            <div class="song-item">
+                <img src="icons/music-img.jpeg" alt="song image">
+                <div class="song-title-artist">
+                    <h6>Song 1</h6>
+                    <p>Artist 1</p>
+                </div>
+                <p>3:15</p>
+                <div class="btn">Add to playlist</div>
+            </div>
+
+            <div class="song-item">
+                <img src="icons/music-img.jpeg" alt="song image">
+                <div class="song-title-artist">
+                    <h6>Song 1</h6>
+                    <p>Artist 1</p>
+                </div>
+                <p>3:15</p>
+                <div class="btn">Add to playlist</div>
+            </div>
+
+          </section>
+
+          <section class="recent-playlist">
+            <h3>Recent Playlist</h3>
+            
+            <div>
+                <div class="playlist-item">
+                    <img src="icons/music-img.jpeg" alt="song image">
+                    <p>3:15</p>
+                </div>
+
+                <div class="playlist-item">
+                    <img src="icons/music-img.jpeg" alt="song image">
+                    <p>3:15</p>
+                </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

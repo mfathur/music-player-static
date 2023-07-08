@@ -1,1 +1,224 @@
+$primary-color: #ef0357;
+$dark-text-color: #b9b9b9;
 
+body {
+  all: unset;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: $dark-text-color;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.btn {
+  color: grey;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid grey;
+
+  &:hover {
+    cursor: pointer;
+    color: $primary-color;
+    border: 3px solid $primary-color;
+    transition: all 0.5s;
+  }
+  &:active {
+    cursor: pointer;
+    color: $primary-color;
+    border: 3px solid $primary-color;
+    transition: all 0.5s;
+  }
+}
+
+.container {
+  display: flex;
+  background-color: #ef0357;
+  min-height: 100%;
+}
+
+nav {
+  width: calc(1 / 5 * 100%);
+  background-color: rgb(20, 21, 23);
+
+  a {
+    display: inline-block;
+    width: 80%;
+    color: $dark-text-color;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 8px 24px 0px 8px;
+    padding: 8px 0px 8px 24px;
+
+    &:active {
+      color: $primary-color;
+      background-color: black;
+    }
+
+    &:hover {
+      color: $primary-color;
+      transition: all 0.5s;
+      background-color: black;
+    }
+  }
+
+  h1 {
+    color: $primary-color;
+    margin: 24px 0px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin: 32px 0px 8px 12px;
+    color: $dark-text-color;
+  }
+}
+
+.content {
+  width: 100%;
+  background-color: #101113;
+  padding-left: 36px;
+  padding-top: 24px;
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .fav-song-wrapper {
+    .fav-song-list {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 48px;
+
+      .fav-song-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        img {
+          width: 200px;
+          height: 180px;
+          background-size: cover;
+          border-radius: 8px;
+
+          &:hover {
+            box-shadow: 5px 5px 10px black;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+        }
+
+        h6 {
+          color: white;
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .song-playlist-wrapper {
+    margin-top: 56px;
+    display: flex;
+    padding-right: 36px;
+
+    .all-songs {
+      flex-grow: 1;
+      margin-right: 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .song-item {
+        box-shadow: 5px 5px 8px black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 8px 24px;
+
+        &:hover {
+          transition: all 0.5s;
+        }
+
+        img {
+          width: 56px;
+          height: 56px;
+          border-radius: 4px;
+        }
+
+        p {
+          flex-grow: 1;
+        }
+
+        .song-title-artist {
+          flex-grow: 2;
+          margin-left: 16px;
+
+          h6 {
+            font-size: 16px;
+          }
+
+          p {
+            margin-top: 8px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .recent-playlist {
+      width: calc(1 / 5 * 100%);
+
+      .playlist-item {
+        position: relative;
+        margin-bottom: 16px;
+
+        img {
+          width: 100%;
+          height: 156px;
+          background-size: cover;
+          border-radius: 8px;
+
+          &:hover {
+            box-shadow: 5px 5px 10px black;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+        }
+      }
+    }
+  }
+}
